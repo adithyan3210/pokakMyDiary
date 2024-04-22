@@ -111,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   scrollDirection: Axis.horizontal,
                   children: const [
                     MealItem(
-                      imagePath: "",
+                      imagePath: "assets/images/image1.jpeg",
                       title: "Breakfast",
                       subTitle1: "Bread",
                       subTitle2: "Peanut butter",
@@ -120,7 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.orange,
                     ),
                     MealItem(
-                      imagePath: "",
+                      imagePath: "assets/images/image2.jpeg",
                       title: "Lunch",
                       subTitle1: "Salmon",
                       subTitle2: "Mixed veggies",
@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.blue,
                     ),
                     MealItem(
-                      imagePath: "",
+                      imagePath: "assets/images/image3.jpeg",
                       title: "Snack",
                       kilocaloriesNum: 600,
                       color: Colors.pink,

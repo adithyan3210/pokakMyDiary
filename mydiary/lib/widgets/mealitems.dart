@@ -41,11 +41,11 @@ class MealItem extends StatelessWidget {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.only(left: 10, top: 10),
+            padding: const EdgeInsets.only(left: 10,),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset(imagePath),
+                Image.asset(imagePath,width: 50,height: 50,),
                 Text(
                   title,
                   style: const TextStyle(
