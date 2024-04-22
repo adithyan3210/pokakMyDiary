@@ -56,10 +56,28 @@ class MediterraneanContainer extends StatelessWidget {
                 Column(
                   children: [
                     Text(title1),
-                    Text("${kilocaloriesNum1.toString()}kcal"),
+                    Row(
+                      children: [
+                        Text(
+                          kilocaloriesNum1.toString(),
+                          style: const TextStyle(fontWeight: FontWeight.w800),
+                        ),
+                        const SizedBox(width: 5),
+                        const Text("kcal"),
+                      ],
+                    ),
                     const SizedBox(height: 30),
                     Text(title2),
-                    Text("${kilocaloriesNum2.toString()}kcal"),
+                    Row(
+                      children: [
+                        Text(
+                          kilocaloriesNum2.toString(),
+                          style: const TextStyle(fontWeight: FontWeight.w800),
+                        ),
+                        const SizedBox(width: 5),
+                        const Text("kcal"),
+                      ],
+                    ),
                   ],
                 ),
                 SizedBox(
@@ -79,7 +97,7 @@ class MediterraneanContainer extends StatelessWidget {
                         trackColor: Colors.grey[300]!,
                       ),
                       infoProperties: InfoProperties(
-                        mainLabelStyle: TextStyle(
+                        mainLabelStyle: const TextStyle(
                           fontSize: 20,
                         ),
                         modifier: (double value) {
@@ -97,7 +115,6 @@ class MediterraneanContainer extends StatelessWidget {
               ],
             ),
             const Divider(),
-            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.only(left: 25, right: 25),
               child: Row(
@@ -106,18 +123,60 @@ class MediterraneanContainer extends StatelessWidget {
                   Column(
                     children: [
                       Text(subTitle1),
+                      const SizedBox(
+                        width: 50,
+                        height: 2,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          child: LinearProgressIndicator(
+                            value: 0.7,
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              Colors.blue,
+                            ),
+                            backgroundColor: Color(0xffD6D6D6),
+                          ),
+                        ),
+                      ),
                       Text("${kilocaloriesLeft1.toString()} left")
                     ],
                   ),
                   Column(
                     children: [
                       Text(subTitle2),
+                      const SizedBox(
+                        width: 50,
+                        height: 2,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          child: LinearProgressIndicator(
+                            value: 0.7,
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              Colors.pink,
+                            ),
+                            backgroundColor: Color(0xffD6D6D6),
+                          ),
+                        ),
+                      ),
                       Text("${kilocaloriesLeft2.toString()} left")
                     ],
                   ),
                   Column(
                     children: [
                       Text(subTitle3),
+                      const SizedBox(
+                        width: 50,
+                        height: 2,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          child: LinearProgressIndicator(
+                            value: 0.7,
+                            valueColor: AlwaysStoppedAnimation<Color>(
+                              Colors.yellow,
+                            ),
+                            backgroundColor: Color(0xffD6D6D6),
+                          ),
+                        ),
+                      ),
                       const SizedBox(height: 2),
                       Text("${kilocaloriesLeft3.toString()} left")
                     ],
